@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.csresearchaccelerometerkey.MainActivity">
+
+    <Button
+        android:id="@+id/key"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:text="Key"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/car"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Car"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/key"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/key" />
+
+    <TextView
+        android:id="@+id/xAccel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="64dp"
+        android:text="x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input" />
+
+    <TextView
+        android:id="@+id/yAccel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:text="y"
+        app:layout_constraintStart_toStartOf="@+id/xAccel"
+        app:layout_constraintTop_toTopOf="@+id/xAccel" />
+
+    <TextView
+        android:id="@+id/zAccel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="z"
+        app:layout_constraintStart_toStartOf="@+id/yAccel"
+        app:layout_constraintTop_toBottomOf="@+id/yAccel" />
+
+    <TextView
+        android:id="@+id/xAccelFirebase"
+        android:layout_width="40dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="72dp"
+        android:text="x"
+        app:layout_constraintStart_toStartOf="@+id/xAccel"
+        app:layout_constraintTop_toBottomOf="@+id/input" />
+
+    <TextView
+        android:id="@+id/yAccelFirebase"
+        android:layout_width="36dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="8dp"
+        android:text="y"
+        app:layout_constraintStart_toStartOf="@+id/xAccelFirebase"
+        app:layout_constraintTop_toBottomOf="@+id/xAccelFirebase" />
+
+    <TextView
+        android:id="@+id/zAccelFirebase"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        android:text="z"
+        app:layout_constraintStart_toStartOf="@+id/yAccelFirebase"
+        app:layout_constraintTop_toBottomOf="@+id/yAccelFirebase" />
+
+
+</android.support.constraint.ConstraintLayout>
